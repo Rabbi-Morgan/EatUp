@@ -1,0 +1,30 @@
+header {
+    background-color: #982121;
+}
+.imgCont{
+    position: relative;
+    overflow: hidden;
+    height: 60vh;
+
+}
+.imgCont img {
+    min-width: 110%;
+    transform: rotateZ(-5deg) translateY(-7rem) translateX(-2rem);
+    position: relative;
+}
+img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+
+}
+
+@media screen and (max-width: 480px) {
+    .imgCont img {
+        
+    }
+}
